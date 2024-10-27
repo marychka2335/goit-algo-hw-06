@@ -95,7 +95,7 @@ for node in G.nodes:
     print(f"Ступінь вершини '{node}': {G.degree(node)}")
 
 # Додавання ваг до ребер
-weights = {(source, target): 1 for source, target in edges}  # Додаємо вагу 1 для всіх ребер
+weights = {(source, target): 1 for source, target in edges}  
 nx.set_edge_attributes(G, weights, 'weight')
 
 # Додавання ваг до графа
